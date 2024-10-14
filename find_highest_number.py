@@ -1,0 +1,1 @@
+variable1 = int(input("Input variable number 1: "))
