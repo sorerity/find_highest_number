@@ -5,18 +5,13 @@ variable4 = int(input("Input variable number 4: "))
 variable5 = int(input("Input variable number 5: "))
 
 def find_highest_number (variable1, variable2, variable3, variable4, variable5):
-    if variable1>variable2:
-        if variable1>variable3:
-            if variable1>variable4:
-                if variable1>variable5:
-                    print("Variable 1 is the Highest:", variable1)
-                else:
-                    print("Variable 5 is the Highest:", variable5)
-            else: 
-                print("Variable 4 is the Highest:", variable4)
-        else:
-            print("Variable 3 is the Highest:", variable3)
-    else: 
-        print("Variable 2 is the Highest: ", variable2)
-
-find_highest_number(variable1, variable2, variable3, variable4, variable5)
+    if variable1 >= variable2 and variable1 >= variable3 and variable1 >= variable4 and variable1 >= variable5:
+        print ("The highest variable is variable 1: ", variable1)
+    elif variable2 >= variable1 and variable2 >= variable3 and variable2 >= variable4 and variable2 >= variable5:
+        print ("The highest variable is variable 2: ", variable2)
+    elif variable3 >= variable1 and variable3 >= variable2 and variable3 >= variable4 and variable3 >= variable5:
+        print("The highest variable is variable 3: ", variable3)
+    elif variable4 >= variable1 and variable4 >= variable2 and variable4 >= variable3 and variable4 >= variable5:
+        print("The highest variable is variable 4: ", variable4)
+    else:
+        print("The highest variable is variable 5: ", variable5)
