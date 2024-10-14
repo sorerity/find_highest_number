@@ -15,3 +15,5 @@ def find_highest_number (variable1, variable2, variable3, variable4, variable5):
         print("The highest variable is variable 4: ", variable4)
     else:
         print("The highest variable is variable 5: ", variable5)
+
+find_highest_number(variable1, variable2, variable3, variable4, variable5)
